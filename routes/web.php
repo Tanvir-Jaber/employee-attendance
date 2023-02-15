@@ -17,41 +17,6 @@ use App\Http\Controllers\EmployeeDetailsController;
 //     return view('admin.index');
 // });
 
-/*
-Route::view("charts-apexcharts","admin.charts-apexcharts");
-Route::view("charts-chartjs","admin.charts-chartjs");
-Route::view("charts-echarts","admin.charts-echarts");
-Route::view("components-accordion","admin.components-accordion");
-Route::view("components-alerts","admin.components-alerts");
-Route::view("components-badges","admin.components-badges");
-Route::view("components-breadcrumbs","admin.components-breadcrumbs");
-Route::view("components-buttons","admin.components-buttons");
-Route::view("components-cards","admin.components-cards");
-Route::view("components-carousel","admin.components-carousel");
-
-Route::view("components-modal","admin.components-modal");
-Route::view("components-pagination","admin.components-pagination");
-Route::view("components-progress","admin.components-progress");
-Route::view("components-spinners","admin.components-spinners");
-Route::view("components-tabs","admin.components-tabs");
-Route::view("components-tooltips","admin.components-tooltips");
-Route::view("forms-editors","admin.forms-editors");
-Route::view("forms-elements","admin.forms-elements");
-Route::view("forms-layouts","admin.forms-layouts");
-
-Route::view("icons-bootstrap","admin.icons-bootstrap");
-Route::view("icons-boxicons","admin.icons-boxicons");
-Route::view("icons-remix","admin.icons-remix");
-Route::view("index","admin.index");
-Route::view("pages-blank","admin.pages-blank");
-Route::view("pages-contact","admin.pages-contact");
-Route::view("pages-error-404","admin.pages-error-404");
-Route::view("pages-faq","admin.pages-faq");
-
-
-
-Route::view("users-profile","admin.users-profile");
-*/
 
 Route::group(['middleware' => ['authCheck']],function(){
     Route::get('/admin/index', [EmployeeController::class,"dashboard"]);
