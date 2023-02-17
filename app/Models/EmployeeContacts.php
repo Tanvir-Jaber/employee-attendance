@@ -5,7 +5,7 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class EmployeeContacts extends Model
+class EmployeeContacts extends SingletonModel
 {
     use HasFactory;
     protected $guarded = [];  
