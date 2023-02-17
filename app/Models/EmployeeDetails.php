@@ -6,7 +6,7 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use App\Models\Employee;
 
-class EmployeeDetails extends Model
+class EmployeeDetails extends SingletonModel
 {
     use HasFactory;
     // protected $fillable = [
