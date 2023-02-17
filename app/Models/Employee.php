@@ -8,7 +8,7 @@ use App\Models\EmployeeDetails;
 use App\Models\EmployeeContacts;
 use App\Models\EmployeeAttendance;
 
-class Employee extends SingletonModel
+class Employee extends MOdel
 {
     use HasFactory;
     protected $fillable = ['fullname', 'email'];   
